@@ -1,35 +1,34 @@
-version: "2.0"
-
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
 intents:
-  - greet
-  - goodbye
-  - mood_affirm
-  - mood_deny
-  - mood_great
-  - mood_unhappy
-
+- greet
+- goodbye
+- mood_affirm
+- mood_deny
+- mood_great
+- mood_unhappy
+- how may i help
+- bot_name
+- mood_raj
 responses:
   utter_greet:
-    - text: "Hey! How are you?"
-      buttons:
-        - title: "great"
-          payload: "great"
-        - title: "super sad"
-          payload: "super sad"
-
+  - buttons:
+    - payload: wow great
+      title: wow great
+    - payload: super sad
+      title: super sad
+    text: Hey! How are you?
   utter_cheer_up:
-    - text: "Here is something to cheer you up:"
-      image: "https://cdn77.eatliver.com/wp-content/uploads/2017/10/trump-frog.jpg"
-
+  - image: https://cdn77.eatliver.com/wp-content/uploads/2017/10/trump-frog.jpg
+    text: 'Here is something to cheer you up:'
   utter_did_that_help:
-    - text: "Did that help you?"
-
+  - text: Did that help you?
   utter_happy:
-    - text: "Great carry on!"
-
+  - text: Great carry on!
   utter_goodbye:
-    - text: "Bye"
-
-session_config:
-  session_expiration_time: 60.0
-  carry_over_slots_to_new_session: true
+  - text: Good Bye
+  utter_name:
+  - text: My name is Raj
+actions:
+- utter_name

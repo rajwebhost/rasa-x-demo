@@ -4,17 +4,23 @@ nlu:
   examples: |
     - hey
     - hello
-    - hi
     - hello there
     - good morning
     - good evening
     - moin
-    - hey there
     - let's go
     - hey dude
     - goodmorning
     - goodevening
     - good afternoon
+- intent: welcome
+  examples: |
+    - hi
+    - hello are you there
+    - hellow
+- intent: mood_raj
+  examples: |
+    - hey there
 - intent: goodbye
   examples: |
     - cu
@@ -59,6 +65,9 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+    - happy
+    - Great
+    - wow great
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -75,3 +84,6 @@ nlu:
     - extremly sad
     - so saad
     - so sad
+- intent: bot_name
+  examples: |
+    - Your name
